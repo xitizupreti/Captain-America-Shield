@@ -1,0 +1,57 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    display: flex;
+}
+
+.circle{
+    width:400px;
+    height:400px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 50px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    border-radius: 50%;
+    box-shadow: 0 0 0 50px red;
+    position: relative;
+}
+
+.arrow{
+    width:0px;
+    height:0px;
+    position: absolute;
+    border: 90px solid transparent;
+    border-top:80px solid white;
+}
+
+.arrow:first-child{
+    top:55px;
+    left:10px;
+}
+
+.arrow:nth-child(2){
+    transform: rotate(68deg);
+    left:-35px;
+    top:35px;
+}
+
+.arrow:last-child{
+    transform: rotate(-68deg);
+    top:35px;
+    left:55px;
+}
